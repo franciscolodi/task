@@ -1,0 +1,38 @@
+name: Process Tasks
+
+on:
+  push:
+    paths:
+      - 'tasks/**/*.json'
+  workflow_dispatch:
+
+jobs:
+  process-tasks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install pandas
+      
+      - name: Process tasks
+        run: |
+          python scripts/process_tasks.py
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "Task Tracker Bot"
+          git add data/tasks.csv
+          if git diff --quiet --cached; then
+            echo "No changes to commit"
+          else
+            git commit -m "📋 Update tasks log - $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          fi
