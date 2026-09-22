@@ -1,0 +1,3 @@
+# Sin dependencias externas por ahora.
+# Descomenta si más adelante usas pandas para análisis:
+# pandas>=2.0.0
