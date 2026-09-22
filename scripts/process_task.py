@@ -13,7 +13,44 @@ from pathlib import Path
 TASKS_DIR = Path("task_events")
 CSV_FILE = Path("data/tasks.csv")
 
+FIELDNAMES = [
+    "task_id",
+    "fecha",
+    "tarea",
+    "hora_inicio",
+    "hora_termino",
+    "duracion_minutos",
+    "categoria",
+    "notas",
+]
 
+def create_empty_csv():
+    """
+    Crea un CSV vacío con los encabezados correctos.
+    Si ya existe, no lo modifica.
+    """
+
+    CSV_FILE.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    if not CSV_FILE.exists():
+        with open(
+            CSV_FILE,
+            "w",
+            newline="",
+            encoding="utf-8"
+        ) as f:
+
+            writer = csv.DictWriter(
+                f,
+                fieldnames=FIELDNAMES
+            )
+
+            writer.writeheader()
+
+        print(f"📄 CSV inicial creado: {CSV_FILE}")
 # ============================================================
 # FUNCIONES DE FECHA / HORA
 # ============================================================
@@ -195,27 +232,15 @@ def load_events():
 # ============================================================
 
 def process_tasks():
-    """
-    Procesa los eventos.
 
-    Regla principal:
-
-        START
-            ↓
-        agrega tarea a tareas activas
-
-        FINISH
-            ↓
-        finaliza la última tarea activa
-
-    Es decir, FINISH funciona como una pila (LIFO).
-    """
+    create_empty_csv()
 
     events = load_events()
 
     if not events:
         print("ℹ️ No hay eventos para procesar")
         return
+
 
     # --------------------------------------------------------
     # Tareas activas
