@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 # Directorios
-TASKS_DIR = Path("tasks")
+TASKS_DIR = Path("task_events")
 CSV_FILE = Path("data/tasks.csv")
 
 def get_duration_minutes(start_time, end_time):
