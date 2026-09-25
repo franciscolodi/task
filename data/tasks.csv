@@ -3,3 +3,4 @@ task_id,fecha,tarea,hora_inicio,hora_termino,duracion_minutos,categoria,notas
 20260924T112050_2026-09-24T11:20:50_entry,2026-09-24,La liberación del alma,2026-09-24T11:20:50,2026-09-24T11:38:28,18,Lectura,Sin nota
 20260924T123310_2026-09-24T12:33:10_entry,2026-09-24,Confesiones de un chef,2026-09-24T12:33:10,2026-09-24T13:25:36,52,Lectura,Sin Notas
 20260924T161249_2026-09-24T16:12:49_entry,2026-09-24,Confesiones de un chef,2026-09-24T16:12:49,2026-09-24T16:49:49,37,Lectura,Sin Notas
+20260925T144335_2026-09-25T14:43:35_entry,2026-09-25,No leer de Alejandro Zamora,2026-09-25T14:43:35,,,Lectura,Sin Notas
