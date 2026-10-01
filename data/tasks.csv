@@ -7,3 +7,4 @@ task_id,fecha,tarea,hora_inicio,hora_termino,duracion_minutos,categoria,notas
 20260926T185441_2026-09-26T18:54:41_entry,2026-09-26,Ir a comprar al jumbo,2026-09-26T18:54:41,2026-09-26T20:17:13,83,Supermercado,Sin Notas
 20260929T151727_2026-09-29T15:17:27_entry,2026-09-29,José Silva Asunción Poseía y Prosa,2026-09-29T15:17:27,2026-09-29T15:36:53,19,Lectura,Sin notas
 20260929T153847_2026-09-29T15:38:47_entry,2026-09-29,No leer de Alejandro Zamor,2026-09-29T15:38:47,2026-09-29T15:59:41,21,Lectura,Sin Notas
+20261001T145843_2026-10-01T14:58:43_entry,2026-10-01,Lectura,2026-10-01T14:58:43,,,Confesiones de un chef,Sin Notas
