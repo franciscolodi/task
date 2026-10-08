@@ -9,3 +9,4 @@ task_id,fecha,tarea,hora_inicio,hora_termino,duracion_minutos,categoria,notas
 20260929T153847_2026-09-29T15:38:47_entry,2026-09-29,No leer de Alejandro Zamor,2026-09-29T15:38:47,2026-09-29T15:59:41,21,Lectura,Sin Notas
 20261001T145843_2026-10-01T14:58:43_entry,2026-10-01,Confesiones de un chef,2026-10-01T14:58:43,2026-10-01T15:16:14,18,Lectura,Sin Notas
 20261006T113129_2026-10-06T11:31:29_entry,2026-10-06,El arte de pensar,2026-10-06T11:31:29,2026-10-06T11:36:38,5,Lectura,Sin Notas
+20261008T122850_2026-10-08T12:28:50_entry,2026-10-08,El arte de pensar,2026-10-08T12:28:50,,,Lectura,Sin Notas
